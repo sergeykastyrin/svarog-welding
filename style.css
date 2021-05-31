@@ -1,0 +1,941 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Roboto;
+}
+
+.all-heading {
+    font-family: Lobster;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FF8C00;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked~nav {
+    left: 0;
+}
+
+.nav {
+    padding-top: 150px;
+    padding-bottom: 125px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    transition: left .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon_menu {
+    stroke: darkorange;
+}
+
+.header {
+    position: relative;
+}
+
+.close_icon {
+    position: absolute;
+    right: 9px;
+    top: 12px;
+}
+
+.open_icon {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    display: block;
+}
+
+a {
+    color: white;
+    font-size: 24px;
+    font-family: Lobster;
+    padding: 8px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: transparent;
+    color: darkorange;
+}
+
+.carousel-indicators button:hover {
+    opacity: 1;
+}
+
+.carousel-indicators .carousel-control-prev:hover {
+    opacity: 1;
+}
+
+.carousel-indicators .carousel-control-next:hover {
+    opacity: 1;
+}
+
+.header__logo {
+    width: 200px;
+    display: block;
+}
+
+.navbar {
+    display: none;
+}
+
+.heading1 {
+    margin-top: 40px;
+    margin-bottom: 35px;
+}
+
+.heading2 {
+    margin-bottom: 20px;
+}
+
+.heading3 {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.heading6 {
+    margin-bottom: 20px;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+}
+
+.text_bottom {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 34px;
+    margin-right: 32px;
+}
+
+.choose_yo_goods {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+}
+
+.first_page {
+    background: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.second_page {
+    background: #000;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.third_page {
+    background: #000;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.fourth_page {
+    background: #000;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+.fifth_page {
+    background: #000;
+    padding-top: 10px;
+}
+
+.sixth_page {
+    background: #000;
+    padding-top: 25px;
+}
+
+.first_image {
+    height: 230px;
+    background-image: url(img/top\ image\ 2.jpg);
+    background-size: contain;
+    margin-bottom: 45px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.second_image {
+    height: 230px;
+    background-image: url(img/svarka.jpg);
+    background-size: contain;
+    margin-top: 45px;
+    margin-bottom: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.third_image {
+    height: 230px;
+    background-image: url(img/maska.png);
+    background-size: contain;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fourth_image {
+    height: 230px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-size: contain;
+    background-image: url(img/fouth\ page\ svakrf.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fifth_image {
+    display: none;
+}
+
+.arrow_down {
+    margin-top: 35px;
+}
+
+.arrow-down_style {
+    width: 42px;
+    height: 22px;
+}
+
+.arrow_up {
+    color:darkorange;
+}
+
+.info_item {
+    border: 1px solid #FF8C00;
+    flex-basis: 166px;
+    padding-left: 17px;
+    padding-right: 17px;
+    min-height: 94px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.carousel {
+    margin-bottom: 15px;
+}
+
+.carousel-indicators {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-left: 34px;
+    margin-right: 34px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: darkorange;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+}
+
+.carousel-indicators .carousel-control-prev {
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 32px;
+    height: auto;
+    background-color: transparent;
+    padding-left: calc(50% - 100px);
+}
+
+.carousel-indicators .carousel-control-next {
+    position: relative;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 32px;
+    height: auto;
+    background-color: transparent;
+    padding-right: calc(50% - 100px);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.info_content {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin: 30px 30px 30px 30px;
+}
+
+.item-heading {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.ul {
+    margin-top: 25px;
+    padding-left: 54px;
+}
+
+.text_ul {
+    margin-bottom: 23px;
+    text-align: left;
+    width: 222px;
+}
+
+.settings_slider {
+    margin: 35px 22px 40px 23px;
+}
+
+.settings_content {
+    background: #444341;
+    padding: 15px 22px 5px 29px;
+}
+
+.settings_icons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.text_settings {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #A9A9A9;
+    margin-left: 5px;
+    margin-right: 11px;
+}
+
+.sixth_page_text {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.final-img1 {
+    background-image: url(img/sixth\ page\ img1.jpg);
+}
+
+.final-img2 {
+    background-image: url(img/sixth\ page\ img2.jpg);
+}
+
+.sixth_page_img {
+    height: 310px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.footer {
+    background: #444341;
+    height: 75px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #A9A9A9;
+    padding-top: 22px;
+}
+
+.text_6page {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 34px;
+    margin-right: 32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.arrow-top-2 {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    z-index: 1;
+    padding: 0;
+    bottom: 30px;
+    right: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    /* border: 5px solid;
+    border-radius: 50%; */
+    display: none;
+    cursor: pointer;
+    color: darkorange;
+    /* background-color: transparent; */
+    outline-color: transparent;
+    margin: 20px 8px;
+    transform: rotate(270deg);
+}
+
+/* .up-button:hover {
+    color: orange;
+    background-color: transparent;
+    border-color: orange;
+} */
+
+.shown {
+    display: inline-block;
+}
+
+.arrow-top-2 path {
+    fill: darkorange;
+    stroke-width: .6;
+    stroke: orangered;    
+    transition: fill 0.5s ease-out;
+    cursor: pointer;
+}
+
+.arrow-top-2 path:hover {
+    fill: orangered;
+}
+
+@media (min-width: 768px) {
+    .first_page {
+        padding-top: 54px;
+        padding-bottom: 80px;
+    }
+
+    .second_page {
+        padding-bottom: 20px;
+    }
+
+    .third_page {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+
+    .fourth_page {
+        padding-top: 10px;
+    }
+
+    .header__logo {
+        width: 400px;
+    }
+
+    .heading1 {
+        margin-top: 100px;
+        font-size: 40px;
+        line-height: 47px;
+        margin-bottom: 60px;
+    }
+
+    .first_image {
+        height: 500px;
+        margin-bottom: 110px;
+        background-image: url(img/top\ image\ 3.jpg);
+    }
+
+    .second_image {
+        height: 500px;
+        margin-top: 75px;
+        margin-left: 20px;
+        margin-right: 20px;
+        background-image: url(img/svarka\ 2.jpg);
+    }
+
+    .third_image {
+        height: 400px;
+    }
+
+    .fourth_image {
+        height: 480px;
+        background-image: url(img/svar.jpg);
+    }
+
+    .text_bottom {
+        font-size: 30px;
+        line-height: 35px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .arrow_down {
+        margin-top: 76px;
+    }
+
+    .arrow-down_style {
+        width: 61px;
+        height: 33px;
+    }
+
+    .heading2 {
+        margin-top: 30px;
+        font-size: 40px;
+        line-height: 47px;
+        margin-bottom: 30px;
+    }
+
+    .info_content {
+        gap: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .item-heading {
+        margin-bottom: 5px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .info_item {
+        min-height: 170px;
+        flex-basis: auto;
+    }
+
+    .settings_slider {
+        margin: 100px 150px 150px;
+    }
+
+    .text_6page {
+        font-size: 30px;
+        line-height: 35px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 60px;
+    }
+
+    .sixth_page_img {
+        height: 450px;
+        background-image: url(img/termorezka.png);
+    }
+
+    .final-img2 {
+        background-image: url(img/gaz\ obor.png);
+    }
+
+    .heading6 {
+        margin-top: 40px;
+        font-size: 40px;
+        line-height: 47px;
+        margin-bottom: 30px;
+    }
+
+    .settings_content {
+        margin-left: 64px;
+        margin-right: 65px;
+        padding-top: 25px;
+    }
+
+    .settings_icons {
+        margin-bottom: 30px;
+        margin-right: 86px;
+        margin-left: 86px;
+    }
+
+    .settings_img {
+        height: 40px;
+    }
+
+    .text_settings {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .text_ul {
+        width: auto;
+        padding: 10px 70px 5px 15px;
+        border-left: 0px;
+        font-size: 25px;
+        line-height: 35px;
+        margin-left: 70px;
+        margin-right: 10px;
+    }
+
+    .ul {
+        display: inline;
+    }
+
+    .footer {
+        font-size: 20px;
+        line-height: 25px;
+        height: 80px;
+        padding-top: 13px;
+    }
+
+    .choose_yo_goods {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .svg_icon {
+        width: 100px;
+        height: 40px;
+    }
+
+    .svg_icon2 {
+        width: 100px;
+        height: 85px;
+    }
+
+    .open_icon {
+        top: 37px;
+        right: 40px;
+    }
+
+    .close_icon {
+        right: 39px;
+        top: 15px;
+    }
+
+    .nav {
+        padding-top: 350px;
+        padding-bottom: 370px;
+    }
+
+    a {
+        font-size: 50px;
+    }
+
+    .carousel-indicators [data-bs-target] {
+        height: 30px;
+        width: 30px;
+    }
+
+    .carousel-indicators {
+        margin-left: 245px;
+        margin-right: 245px;
+        margin-bottom: 22px;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .carousel-indicators .carousel-control-prev {
+        padding-left: calc(50% - 300px);
+    }
+
+    .carousel-indicators .carousel-control-next {
+        padding-right: calc(50% - 300px);
+    }
+
+    .up-button {
+        width: 64px;
+        height: 64px;
+        font-size: 36px;
+    }
+
+    .arrow-top-2 {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 1024px) { 
+    .center {
+        padding-left: calc(50% - 580px);
+        padding-right: calc(50% - 580px);
+    }
+
+    .alter_center {
+        padding-left: calc(50% - 479px);
+        padding-right: calc(50% - 479px);
+    }
+
+    .alter_center2 {
+        padding-left: calc(50% - 600px);
+        padding-right: calc(50% - 600px);
+    }
+
+    .sixthpage_item {
+        height: 557px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .sixth_page {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .text6_1 {
+        padding-right: 50px;
+        padding-left: 50px;
+        order: 2;
+    }
+
+    .text6_2 {
+        padding-left: 50px;
+        padding-right: 50px;
+        order: 3;
+    }
+
+    .final-img1 {
+        order: 1;
+        background-image: url(img/termorezka.png);
+        background-size: auto;
+    }
+
+    .final-img2 {
+        order: 4;
+        background-image: url(img/gaz\ obor\ small.png);
+        background-size: auto;
+    }
+
+    .text6_1 .heading2 {
+        text-align: left;
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .text6_1 .text_6page {
+        text-align: left;
+        line-height: 25px;
+        font-size: 20px;
+    }
+
+    .text6_2 .heading6 {
+        text-align: right;
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .text6_2 .text_6page {
+        text-align: right;
+        line-height: 25px;
+        font-size: 20px;
+    }
+
+    .header__logo {
+        display: none;
+    }
+
+    .open_icon {
+        display: none;
+    }
+
+    .navbar {
+        display: block;
+        padding: 15px 60px 0px 0px;
+    }
+
+    .header {
+        height: 100px;
+        display: flex;
+        align-items: center;
+    }
+
+    .first_page {
+        padding-top: 0px;
+        padding-bottom: 50px;
+    }
+
+    .third_page {
+        padding-top: 50px;
+        padding-bottom: 10px;
+    }
+
+    .fourth_page {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+
+    .fifth_page {
+        padding-bottom: 80px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .show>.nav-link {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .header__logo_laptop-menu {
+        width: 200px;
+    }
+
+    .menu_desktop {
+        margin-left: 75px;
+    }
+
+    .nav-item {
+        padding-left: 18px;
+        padding-right: 18px;
+        border-right: 1px solid darkorange;
+    }
+
+    .nav-item:first-child {
+        padding-left: 0px;
+    }
+
+    .nav-item:last-child {
+        padding-right: 0px;
+        border: none;
+    }
+
+    .navbar-light .navbar-nav .nav-link:focus,
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: darkorange;
+    }
+
+    .laptop_menu {
+        padding-top: 0px;
+    }
+
+    .first_image {
+        margin-top: 20px;
+        height: 650px;
+        padding-top: 80px;
+        background: url(img/first\ page\ image\ BIG.png) no-repeat;
+        background-size: contain;
+        margin-bottom: 40px;
+        background-position: center;
+    }
+
+    .second_image {
+        height: 500px;
+        background: url(img/svarka\ BIG.jpg) no-repeat;
+        background-size: contain;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        background-position: center;
+    }
+
+    .fourth_image {
+        background-image: url(img/svarka\ BIG\ 2.png);
+        height: 550px;
+        margin-top: 40px;
+    }
+
+    .fifth_image {
+        display: flex;
+        justify-content: center;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .heading1 {
+        margin-top: 90px;
+    }
+
+    .heading2 {
+        margin-top: 0px;
+    }
+
+    .all-heading {
+        font-size: 30px;
+        line-height: 42px;
+        margin-bottom: 35px;
+    }
+
+    .text_bottom {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .arrow_down {
+        margin-top: 49px;
+    }
+
+    .info_item {
+        min-height: 140px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .carousel-indicators {
+        margin-left: calc(50% - 202px);
+        margin-right: calc(50% - 202px);
+        margin-bottom: 35px;
+    }
+
+    .settings_slider {
+        display: none;
+    }
+
+    .text_settings {
+        font-size: 20px;
+        line-height: 10px;
+    }
+
+    .text5 {
+        width: 700px;
+        margin: auto;
+    }
+
+    .settings_content {
+        width: 749px;
+        margin: auto;
+    }
+
+    .footer {
+        font-size: 15px;
+        line-height: 20px;
+        height: 70px;
+    }
+
+    .carousel-indicators .carousel-control-prev {
+        padding-left: calc(50% - 150px);
+    }
+
+    .carousel-indicators .carousel-control-next {
+        padding-right: calc(50% - 150px);
+    }
+
+
+} 
